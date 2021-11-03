@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  font-family: Helvetica;
+  width: 480px;
+  margin: 0 auto;
+}
+ul{
+  list-style: none; /*quitar los elementos de la lista*/
+}
+.menu li a{
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block; /* establece los tipos de visualización interna y externa de un elemento*/
+  text-decoration: none;  /*Vamos a quitar el sobrayado*/
+  min-width: 100px; /*se usa para determinar la anchura mínima de un elemento*/
+}
+.menu li a:hover{ /* Hover es un efecto que se le va a dar cuando el cursor pase ensima del elemento*/
+  color: #000;
+  background-color: #eaeaea;
+}
+.menu li{
+  float: left; /*Posiciona los elementos de forma flotante*/
+  text-align:center
+}
+.menu li ul{
+  display: none;
+}
+.menu li:hover ul {
+  display:block;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Cursos</a>
+            <ul>
+              <li><a href="">Frontend</a></li>
+              <li><a href="">Backend</a></li>
+              <li><a href="">Mobile</a></li>
+            </ul>  
+          </li>
+          <li><a href="">Tutoriales</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+</body>
+</html>
